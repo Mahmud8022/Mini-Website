@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.text {
+    max-width: 400px;
+    color: blue;
+}
+
+button {
+    padding: 10px 20px;
+    background: green;
+    color: black;
+    border: none;
+}
+
+button:hover {
+    background: red;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
